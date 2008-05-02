@@ -1,11 +1,12 @@
-" Colorscheme created with ColorSchemeEditor v1.0 beta
+" Colorscheme created with ColorSchemeEditor v1.2.1
 "Name: MountainDew
 "Maintainer: Erik Falor <ewfalor@gmail.com>
-"Version: 1.0
-"Last Change: 2008 Mar 17
+"Version: 2.0
+"Last Change: 2008 May 01
 "License: Vim License
 
 "Notes: Do the Dew!
+"Version 2.0 -  Let's see if this is easier on the eyes.  Made the normal background darker.
 
 set background=dark
 if version > 580
@@ -17,19 +18,21 @@ endif
 let g:colors_name = "MountainDew"
 
 if v:version >= 700
-	highlight CursorColumn guibg=#0D3C0A gui=NONE
-	highlight CursorLine guibg=#35A156 gui=NONE
+	highlight CursorColumn guibg=#0F5123 gui=NONE
+	highlight CursorLine guibg=#0F5123 gui=NONE
 	highlight Pmenu guifg=#2FB457 guibg=#017550 gui=NONE
 	highlight PmenuSel guifg=#FF0000 guibg=#FFFF00 gui=bold
 	highlight PmenuSbar guibg=#017550 gui=NONE
 	highlight PmenuThumb guibg=#2FB457 gui=NONE
-	highlight SpellBad gui=undercurl
-	highlight SpellCap gui=undercurl
-	highlight SpellLocal gui=undercurl
-	highlight SpellRare gui=undercurl
 	highlight TabLine guifg=#60FF60 guibg=#017550 gui=NONE
 	highlight TabLineFill guifg=#017550 guibg=#017550 gui=NONE
 	highlight TabLineSel guifg=#FFFF00 guibg=#FF0000 gui=bold
+	if has('spell')
+		highlight SpellBad gui=undercurl
+		highlight SpellCap gui=undercurl
+		highlight SpellLocal gui=undercurl
+		highlight SpellRare gui=undercurl
+	endif
 endif
 highlight Cursor guifg=#FFFF00 guibg=#FF0000 gui=NONE
 highlight link CursorIM cleared
@@ -41,13 +44,13 @@ highlight Directory guifg=#21D959 gui=bold
 highlight ErrorMsg guifg=#FFFF00 guibg=#FF0000 gui=NONE
 highlight FoldColumn guifg=#E12E2A guibg=bg gui=NONE
 highlight Folded guifg=#FFFF00 guibg=bg gui=NONE
-highlight IncSearch guifg=#E12E2A guibg=#60FF60 gui=bold
+highlight IncSearch guifg=#2FB457 guibg=#FFFF60 gui=bold,reverse
 highlight LineNr guifg=#E12E2A gui=bold
 highlight MatchParen guifg=#017550 guibg=#D8E353 gui=NONE
 highlight ModeMsg guifg=#60FF60 gui=bold
 highlight MoreMsg guifg=#017550 gui=bold
 highlight NonText guifg=#E12E2A guibg=bg gui=bold
-highlight Normal guifg=#FFFFFF guibg=#2FB457 gui=NONE
+highlight Normal guifg=#FFFFFF guibg=#203D29 gui=NONE
 highlight Question guifg=#60FF60 gui=bold
 highlight Search guifg=#2FB457 guibg=#FFFF00 gui=bold
 highlight SignColumn guifg=fg guibg=bg gui=NONE
@@ -55,21 +58,21 @@ highlight SpecialKey guifg=#90dcb0 gui=NONE
 highlight StatusLine guifg=#FFFF00 guibg=#E12E2A gui=bold
 highlight StatusLineNC guifg=#60FF60 guibg=#017550 gui=NONE
 highlight Title guifg=#60FF60 gui=bold
-highlight VertSplit guifg=#5CAC27 guibg=#017550 gui=NONE
-highlight Visual guifg=black guibg=#43D5FF gui=NONE
+highlight VertSplit guifg=#60FF60 guibg=#017550 gui=NONE
+highlight Visual guifg=#FFFFFF guibg=#FFA500 gui=NONE
 highlight VisualNOS guifg=#201a30 guibg=#a3a5FF gui=bold,underline
 highlight WarningMsg guifg=#E12E2A gui=NONE
 highlight WildMenu guifg=#FFFF60 guibg=#2FB457 gui=bold
 highlight link Boolean Constant
 highlight link Character Constant
-highlight Comment guifg=#0F5123 gui=NONE
+highlight Comment guifg=#21D959 gui=NONE
 highlight Conditional guifg=#D8E353 guibg=bg gui=bold
-highlight Constant guifg=#8B0000 gui=NONE
+highlight Constant guifg=#FF0000 gui=NONE
 highlight link Debug Special
 highlight link Define PreProc
 highlight link Delimiter Special
 highlight Error guifg=#FFFF00 guibg=Red gui=NONE
-highlight Exception guifg=#aaa4a0 guibg=bg gui=NONE
+highlight Exception guifg=#60FF60 guibg=bg gui=NONE
 highlight link Float Number
 highlight Function guifg=#FFFF00 guibg=bg gui=NONE
 highlight Identifier guifg=#FFFF60 gui=NONE
@@ -106,10 +109,11 @@ if v:version >= 700
 				\"License" : ["Vim License",
 				\],
 				\"Notes" : ["Do the Dew!",
+				\"Version 2.0 -  Let's see if this is easier on the eyes.  Made the normal background darker.",
 				\],
-				\"Version" : "1.0",
+				\"Version" : "2.0",
 				\"Email" : "ewfalor@gmail.com",
-				\"Last Change" : "2008 Mar 17",
+				\"Last Change" : "2008 May 01",
 				\}
 endif
 "}}}
